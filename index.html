@@ -126,14 +126,21 @@
   .heading-2 {
     color: white;
     text-shadow: 0 0 0.313em rgba(0,0,0,.5), 0 0 0.625em rgba(0,0,0,.5);
-    font-size: 2.5em;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 400;
     /* 0 0 .313em #d96459, 0 0 .625em #d96459 */
   }
 
   .heading-3 {
-    font-size: 2.2em;
+    text-shadow: 0 0 0.313em rgba(0,0,0,.5), 0 0 0.625em rgba(0,0,0,.5);
+    font-size: 2.8rem;
     font-weight: 300;
+  }
+
+  .heading-4 {
+    text-shadow: 0 0 0.313em rgba(0,0,0,.5), 0 0 0.625em rgba(0,0,0,.5);
+    font-size: 2.2em;
+    font-weight: 200;
   }
 
   .hideIt {
@@ -226,12 +233,16 @@
       font-size: 2.3em;
     }
     h2 {
-      font-size: 2.5em;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 2.8rem;
       font-weight: 300;
     }
     h4 {
-      font-size: 2.2em;
-      font-weight: 300;
+      font-size: 2.2rem;
+      font-weight: 200;
     }
   }
   </style>
@@ -248,13 +259,13 @@
       <br>
       <!-- <a href="#"> <img src="images/profile_pic.jpg" alt="Profile Picture" class="profile"> </a> -->
       <h1>howdy</h1>
-      <h1>i'm <span class="element"></span></h1>
+      <h1>i'm <span class="element" style="font-weight: 400"></span></h1>
       <br>
-      <h2 class="hideIt heading-2">audiophile // programmer // artist</h2>
-      <h2 class="hideIt heading-2">let's connect and invent amazing things.</h2>
+      <h2 class="hideIt heading-2">audiophile , programmer & artist</h2>
+      <h2 class="hideIt heading-3">let's connect and create some amazing things</h2>
       <br>
       <br>
-      <h4 class="hideIt heading-3">127.0.0.1 in San Francisco, CA</h4>
+      <h4 class="hideIt heading-4">127.0.0.1 in San Francisco, CA</h4>
       <br>
       <div>
         <ul class="list-inline">
@@ -284,7 +295,7 @@
       }
     });
     function lift() {
-      $('.element').addClass("heading").fadeOut(30).fadeIn(600);
+      $('.element').addClass("heading").fadeOut(40).fadeIn(50).fadeOut(60)fadeIn(600);
       $('.hideIt').delay(8000).addClass('showIt').fadeIn(5000);
     }
   });
