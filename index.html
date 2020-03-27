@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon-precomposed" href="/images/atom-icon-57-242415.png">
   <link rel="icon" href="/images/atom-icon-32-242415.png" sizes="32x32">
 
-  <title>amarah's desk</title>
+  <title>Amarah's Desk</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -121,14 +121,22 @@
     color: white;
     font-family: "Helvetica Neue";
     /* 'Roboto Slab', serif; */
-    text-shadow: 0 0 .313em #fff, 0 0 .625em #fff
+    text-shadow: 0 0 .313em #fff, 0 0 .625em #fff;
   }
 
   .heading-2 {
     color: white;
-    text-shadow: 0 0 0.313em rgba(0,0,0,.5), 0 0 0.625em rgba(0,0,0,.5)
+    text-shadow: 0 0 0.313em rgba(0,0,0,.5), 0 0 0.625em rgba(0,0,0,.5);
+    font-size: 2.5em;
+    font-weight: 300;
     /* 0 0 .313em #d96459, 0 0 .625em #d96459 */
   }
+
+  .heading-3 {
+    font-size: 2.2em;
+    font-weight: 300;
+  }
+
   .hideIt {
     opacity: 0
   }
@@ -222,7 +230,7 @@
       font-size: 2.5em;
       font-weight: 300;
     }
-    h3 {
+    h4 {
       font-size: 2.2em;
       font-weight: 300;
     }
@@ -243,11 +251,11 @@
       <h1>howdy</h1>
       <h1>i'm <span class="element"></span></h1>
       <br>
-      <h2 class="hideIt heading-2">i'm an audiophile, programmer & artist.</h2>
-      <h3 class="hideIt heading-2">let's be friends and make cool things.</h3>
+      <h2 class="hideIt heading-2">audiophile // programmer // artist</h2>
+      <h2 class="hideIt heading-2">let's connect and invent amazing things.</h2>
       <br>
       <br>
-      <h3 class="hideIt heading-2">127.0.0.1 in San Francisco, CA</h3>
+      <h4 class="hideIt heading-3">127.0.0.1 in San Francisco, CA</h4>
       <br>
       <div>
         <ul class="list-inline">
@@ -268,7 +276,7 @@
   <script>
   $(function() {
     $(".element").typed({
-      strings: ["a developer", "an electronic dj", "a photographer", "amarah sharif"],
+      strings: ["a software developer", "a disc jockey", "a sketch artist", "amarah sharif"],
       typeSpeed: 30,
       startDelay: 500,
       backDelay: 250,
@@ -277,7 +285,7 @@
       }
     });
     function lift() {
-      $('.element').addClass("heading").fadeOut(100).fadeIn(700);
+      $('.element').addClass("heading").fadeOut(30).fadeIn(600);
       $('.hideIt').delay(8000).addClass('showIt').fadeIn(5000);
     }
   });
